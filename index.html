@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/minireset.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="designs.js"></script>
+</head>
+<body>
+    <div class="page-wrap">
+        <header><h1>Lab: Pixel Art Maker</h1></header>
+        
+        <content class="clearfix">
+
+            <div id="grid-options">
+
+                <div id="grid-size">
+                    <h2>grid options</h2>
+                    <form id="size-picker">
+                        <p>height</p>
+                        <input type="number" id="input_height" name="height" min="1" value="1">
+                        <br>
+                        <p>width</p>
+                        <input type="number" id="input_width" name="width" min="1" value="1">
+                        <br>
+                        <input type="submit">
+                    </form>
+                </div>
+
+                <div id="grid-color">
+                    <p>fg color</p>
+                    <input type="color" id="fg-color-picker" value="#000000">
+                    <p>bg color</p>
+                    <input type="color" id="bg-color-picker" value="#ffffff">
+                </div>
+
+            </div>
+
+            <div id="canvas">
+                <h2>design canvas</h2>
+                <p class="tip"><- set the grid options and click submit</p>
+                <picture id="pencil" class="icon-active"><img src="./imgs/pencil-26.png" alt="pencil icon"></picture>
+                <picture id="eraser" class="icon-inactive"><img src="./imgs/eraser-26.png" alt="eraser icon"></picture>
+                <table id="pixel-canvas"></table>
+            </div>
+
+        </content>
+    </div>
+
+    <footer class="site-footer">
+        <p>developed by Tiago Cruz for <a href="http://udacity.com" target="blank">Udacity</a>'s Google Developer Challenge Scholarship: Front-End Web Dev</p>
+    </footer>
+</body>
+</html>

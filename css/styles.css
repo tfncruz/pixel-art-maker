@@ -1,0 +1,129 @@
+html, body { height: 100%; }
+
+body {
+    font-family: "Inconsolata", monospace;
+    font-style: 400;
+    font-size: 1em;
+    line-height: 1.2em;
+    padding: 1em;
+    margin: 1em 0 0 1em;
+}
+
+h1 { 
+    font-style: 700;
+    font-size: 2em;
+}
+
+h2 { 
+    margin-bottom:1em; 
+    font-size: 1em; 
+}
+
+p {
+    margin-bottom: 0.2em;
+    text-align: left;
+}
+
+header, content, footer { width: 100%; }
+
+content { margin-top: 1em; }
+
+footer { 
+    margin-top: 1em; 
+    font-size: 0.8em;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#grid-options {
+    width: 10em;
+    float:left;
+    border: 1px solid #ccc;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+#canvas {
+    float: left;
+    position: relative;
+    border: 1px solid #ccc;
+    width:auto;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    padding: 1em;
+}
+
+#grid-color {
+    margin-top: 1em;
+}
+
+#size-picker input {
+    margin-bottom: 1.2em;
+}
+
+.tip {
+    font-size: 0.8em;
+    color: #cc0000;
+}
+
+input[type="submit"] {
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.2s;
+}
+
+input[type="submit"]:hover { color: #cc0000; }
+
+picture { 
+    width:20px;
+    padding: 2px;
+}
+.icon-active {
+    border: 1px solid #000; 
+}
+.icon-inactive {
+    border: 1px solid #ccc; 
+}
+
+table,
+tr,
+td {
+    border: 1px solid #ccc;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+    margin-bottom: -40px; 
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+    height: 40; 
+}
